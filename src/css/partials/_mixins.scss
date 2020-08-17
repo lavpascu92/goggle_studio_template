@@ -1,0 +1,24 @@
+//************
+//FONTS MIXINS
+//************
+@mixin font_poppins_body($font_weight, $font_size) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: $font_weight;
+    font-size: $font_size;
+}
+
+@mixin font_abril_accent($font_weight, $font_size) {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: $font_weight;
+    font-size: $font_size;
+}
+
+
+//*************
+//MEDIA QUERIES
+//*************
+@mixin media_query($break_point) {
+    @media(min-width: #{$break_point}) {
+        @content;
+    }
+}
