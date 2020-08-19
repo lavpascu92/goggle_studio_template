@@ -18,7 +18,7 @@
 //MEDIA QUERIES
 //*************
 @mixin media_query($break_point) {
-    @media(min-width: #{$break_point}) {
+    @media(max-width: #{$break_point}) {
         @content;
     }
 }
