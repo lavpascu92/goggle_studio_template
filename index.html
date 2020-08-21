@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://gogglestudio.co.uk/wp-content/uploads/2020/07/Goggle-favicon.svg" sizes="32x32">
+
     <!-- CSS NORMALIZE -->
     <link rel="stylesheet" href="./src/css/lib/normalize.css">
     <!-- CSS ANIMATE -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- FONT AWSOME ICONS -->
     <script src="https://kit.fontawesome.com/0228273b28.js" crossorigin="anonymous"></script>
+    <!-- MENU BURGER CSS -->
+    <link rel="stylesheet" href="./src/css/lib/hamburgers.css">
     <!-- CSS STYLES -->
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Goggle studio template</title>
@@ -23,149 +25,178 @@
         <a href="#" class="link-reset fixed-black-box-links w-link">W.</a>
         <a href="#" class="link-reset fixed-black-box-links vertical-align">Nominee</a>
     </div>
-    <div class="container">
-        <!-- Header section -->
-        <div id="header" class="header header-fixed-to-top">
-            <!-- Header LOGO -->
-            <div class="header-logo">
-                <a href="#" class="link-reset">
-                    <img src="./src/media/imgs/Goggle-Logo.svg" alt="Google studio logo">
-                </a>
+    <div class="main-container">
+        <!-- LEFT FIXED MENU -->
+        <div class="fixed-left-nav d-none">
+            <div class="fixed-to-left ">
+                <a href="#" class="link-reset fixed-left-nav-links active-link-left">HOME</a>
+                <a href="#" class="link-reset fixed-left-nav-links ">ABOUT</a>
+                <a href="#" class="link-reset fixed-left-nav-links">PROJECTS</a>
+                <a href="#" class="link-reset fixed-left-nav-links">CONTACT</a>
             </div>
-            <!-- Header Navigation -->
-            <div class="header-nav">
-                <a href="#" class="link-reset header-nav-links active-link">Home</a>
-                <a href="#" class="link-reset header-nav-links">About</a>
-                <a href="#" class="link-reset header-nav-links">Projects</a>
-                <a href="#" class="link-reset header-nav-links">Contact</a>
-            </div>
-            <!-- Header location -->
-            <div class="header-location d-none-mobile">
-                <i class="fas fa-map-marker-alt"></i>
-                <a href="#" class="link-reset header-location-link">
-                    South East, England
-                </a>
-            </div>
+
         </div>
+        <!-- MAIN CONTENT OF PAGE -->
+        <div class="container">
+            <!-- Header section -->
+            <div id="header" class="header header-fixed-to-top">
+                <!-- Header LOGO -->
+                <div class="header-logo">
+                    <a href="#" class="link-reset">
+                        <img class="header-logo-img" alt="Google studio logo">
+                    </a>
+                </div>
+                <!-- Header Navigation -->
 
-        <!-- Main content section -->
-        <div class="main">
-            <!-- Hero image section -->
-            <div class="hero">
-                <!-- <img class="hero-img" src="./src/media/imgs/Hero-image.svg" alt="Hero image"> -->
-            </div>
-            <!-- Big title section -->
-            <div class="title">
-                <div class="title-small">
-                    Welcome to Goggle Studio
+                <div class="header-nav">
+                    <div class="header-nav-hamburger d-none">
+                        <button class="hamburger hamburger--slider " type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="header-nav-links d-none-laptop">
+                        <a href="#" class="link-reset header-nav-link active-link">Home</a>
+                        <a href="#" class="link-reset header-nav-link">About</a>
+                        <a href="#" class="link-reset header-nav-link">Projects</a>
+                        <a href="#" class="link-reset header-nav-link">Contact</a>
+                    </div>
+
                 </div>
-                <div class="title-big">
-                    The creative partnership
-                    that’s got your back.
-                </div>
-            </div>
-            <!-- At a glance section -->
-            <div class="at-a-glance">
-                <div class="glance-title">
-                    Goggle at a glance
-                </div>
-                <div class="glance-para">
-                    Whether it’s an app you need, pitch-perfect print, a brand new website or even a shiny new brand;
-                    we’ll work with you to get it right.
-                </div>
-                <div>
-                    <a href="#" class="link-reset glance-link hover-red-underline">
-                        Find out more about us <i class="fas fa-arrow-right"></i>
+                <!-- Header location -->
+                <div class="header-location d-none-mobile">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#" class="link-reset header-location-link">
+                        South East<span class="d-none-laptop">, England</span>
                     </a>
                 </div>
             </div>
-            <!-- Grid photo and info section -->
-            <div class="grid">
-                <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
-                    <div class="grid-2-info">
-                        <div class="grid-2-small-title">Website redesign</div>
-                        <div class="grid-2-big-title">Ardent Consulting Engineers</div>
-                        <div class="grid-2-para">Ardent wanted a new website that portrayed a lighter, welcoming and
-                            personal yet
-                            professional feel to service the growth of B2B traffic they were receiving for their digital
-                            offering.
-                        </div>
-                        <a href="#" class="link-reset grid-2-info-links hover-red-underline">
-                            See more of this project <i class="fas fa-arrow-right"></i>
+
+            <!-- Main content section -->
+            <div class="main">
+                <!-- Hero image section -->
+                <div id="hero-img" class="hero">
+                    <img data-depth="0.2" class="hero-img" alt="Hero image">
+                </div>
+                <!-- Big title section -->
+                <div class="title">
+                    <div class="title-small">
+                        Welcome to Goggle Studio
+                    </div>
+                    <div class="title-big">
+                        The creative partnership
+                        that’s got your back.
+                    </div>
+                </div>
+                <!-- At a glance section -->
+                <div class="at-a-glance">
+                    <div class="glance-title">
+                        Goggle at a glance
+                    </div>
+                    <div class="glance-para">
+                        Whether it’s an app you need, pitch-perfect print, a brand new website or even a shiny new
+                        brand;
+                        we’ll work with you to get it right.
+                    </div>
+                    <div>
+                        <a href="#" class="link-reset glance-link hover-red-underline">
+                            Find out more about us <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
-                    <div class="grid-2-img">
-                        <img class="grid-imgs hvr-grow" src="./src/media/imgs/ardent-map.jpg" alt="Ardent map">
+                </div>
+                <!-- Grid photo and info section -->
+                <div class="grid">
+                    <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="grid-2-info">
+                            <div class="grid-2-small-title">Website redesign</div>
+                            <div class="grid-2-big-title">Ardent Consulting Engineers</div>
+                            <div class="grid-2-para">Ardent wanted a new website that portrayed a lighter, welcoming and
+                                personal yet
+                                professional feel to service the growth of B2B traffic they were receiving for their
+                                digital
+                                offering.
+                            </div>
+                            <a href="#" class="link-reset grid-2-info-links hover-red-underline">
+                                See more of this project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="grid-2-img">
+                            <img class="grid-imgs hvr-grow" src="./src/media/imgs/ardent-map.jpg" alt="Ardent map">
+                        </div>
+                    </div>
+
+                    <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="grid-2-img">
+                            <img class="grid-imgs hvr-grow" src="./src/media/imgs/book-img.jpg" alt="Upside down book">
+                        </div>
+                        <div class="grid-2-info reverse-order">
+                            <div class="grid-2-small-title">Boucher design</div>
+                            <div class="grid-2-big-title">Millwood</div>
+                            <div class="grid-2-para">We were approached on behalf of Millwood to produce a Travel Plan
+                                Pack
+                                (TPP). The TPP forms
+                                part of the welcome pack for new residents and gives them information on the local and
+                                surrounding areas.
+                            </div>
+                            <a href="#" class="link-reset grid-2-info-links hover-red-underline">
+                                See more of this project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
+                        <div class="grid-2-info">
+                            <div class="grid-2-small-title">Brand creation</div>
+                            <div class="grid-2-big-title">JB Beaspoke Carpentry</div>
+                            <div class="grid-2-para">JB is a bespoke carpentry company that was looking to stand out
+                                from
+                                their competition.
+                                They came to us to help create a logo that was different from the usual carpentry logo.
+                            </div>
+                            <a href="#" class="link-reset grid-2-info-links hover-red-underline">
+                                See more of this project <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="grid-2-img">
+                            <img class="grid-imgs hvr-grow" src="./src/media/imgs/bespoke-img.png" alt="Bespoke brand">
+                        </div>
+                    </div>
+
+                    <div class="grid-button hvr-shadow">
+                        <a href="#" class="link-reset grid-button-link">See all our projects</a>
                     </div>
                 </div>
-
-                <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
-                    <div class="grid-2-img">
-                        <img class="grid-imgs hvr-grow" src="./src/media/imgs/book-img.jpg" alt="Upside down book">
+                <!-- Partners section -->
+                <div class="partners">
+                    <div class="partners-title">
+                        Who we’re doing it for?
                     </div>
-                    <div class="grid-2-info reverse-order">
-                        <div class="grid-2-small-title">Boucher design</div>
-                        <div class="grid-2-big-title">Millwood</div>
-                        <div class="grid-2-para">We were approached on behalf of Millwood to produce a Travel Plan Pack
-                            (TPP). The TPP forms
-                            part of the welcome pack for new residents and gives them information on the local and
-                            surrounding areas.
-                        </div>
-                        <a href="#" class="link-reset grid-2-info-links hover-red-underline">
-                            See more of this project <i class="fas fa-arrow-right"></i>
+                    <div class="partners-subtitle">
+                        We do it for you! The partnerships we form are our number one focus.
+                    </div>
+                    <div class="partners-logos">
+                        <a href="#" class="partners-logos-links link-reset hvr-reveal">
+                            <img src="./src/media/imgs/Ardebt-CE.svg" alt="Ardent logo">
+                        </a>
+                        <a href="#" class="partners-logos-links link-reset hvr-reveal">
+                            <img src="./src/media/imgs/anderson-foundation-logo.svg" alt="Anderson foundation logo">
+                        </a>
+                        <a href="#" class="partners-logos-links link-reset hvr-reveal">
+                            <img src="./src/media/imgs/JB-Bespoke.svg" alt="JB Bespoke Carpentry logo">
+                        </a>
+                        <a href="#" class="partners-logos-links link-reset hvr-reveal">
+                            <img src="./src/media/imgs/Millwood.svg" alt="Millwood logo">
+                        </a>
+                        <a href="#" class="partners-logos-links link-reset hvr-reveal">
+                            <img src="./src/media/imgs/TCR.svg" alt="The cutting room logo">
                         </a>
                     </div>
-                </div>
-
-                <div class="grid-2" data-aos="zoom-in-up" data-aos-duration="1500">
-                    <div class="grid-2-info">
-                        <div class="grid-2-small-title">Brand creation</div>
-                        <div class="grid-2-big-title">JB Beaspoke Carpentry</div>
-                        <div class="grid-2-para">JB is a bespoke carpentry company that was looking to stand out from
-                            their competition.
-                            They came to us to help create a logo that was different from the usual carpentry logo.
-                        </div>
-                        <a href="#" class="link-reset grid-2-info-links hover-red-underline">
-                            See more of this project <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="grid-2-img">
-                        <img class="grid-imgs hvr-grow" src="./src/media/imgs/bespoke-img.png" alt="Bespoke brand">
-                    </div>
-                </div>
-
-                <div class="grid-button hvr-shadow">
-                    <a href="#" class="link-reset grid-button-link">See all our projects</a>
-                </div>
-            </div>
-            <!-- Partners section -->
-            <div class="partners">
-                <div class="partners-title">
-                    Who we’re doing it for?
-                </div>
-                <div class="partners-subtitle">
-                    We do it for you! The partnerships we form are our number one focus.
-                </div>
-                <div class="partners-logos">
-                    <a href="#" class="partners-logos-links link-reset hvr-reveal">
-                        <img src="./src/media/imgs/Ardebt-CE.svg" alt="Ardent logo">
-                    </a>
-                    <a href="#" class="partners-logos-links link-reset hvr-reveal">
-                        <img src="./src/media/imgs/anderson-foundation-logo.svg" alt="Anderson foundation logo">
-                    </a>
-                    <a href="#" class="partners-logos-links link-reset hvr-reveal">
-                        <img src="./src/media/imgs/JB-Bespoke.svg" alt="JB Bespoke Carpentry logo">
-                    </a>
-                    <a href="#" class="partners-logos-links link-reset hvr-reveal">
-                        <img src="./src/media/imgs/Millwood.svg" alt="Millwood logo">
-                    </a>
-                    <a href="#" class="partners-logos-links link-reset hvr-reveal">
-                        <img src="./src/media/imgs/TCR.svg" alt="The cutting room logo">
-                    </a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Footer section -->
     <div class="footer">
 
@@ -193,7 +224,9 @@
     </div>
 
     <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./src/js/app.js"></script>
 </body>

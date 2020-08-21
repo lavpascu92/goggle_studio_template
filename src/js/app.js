@@ -1,15 +1,23 @@
-$(document).ready(function(){
-    // AOS plugin initialization
-    AOS.init();   
+$(document).ready(function () {
+    // AOS(animate on scroll) plugin initialization
+    AOS.init();
     // Hero background image slight move on mousemove
-    $('.hero').mousemove(function(el){
-        var moveX = (el.pageX * 1 / 150);
-        var moveY = (el.pageY * 1 / 150);
-        $(this).css('background-position', moveX + "px " + moveY + "px");
+    var heroImg = $("#hero-img").get(0);
+    var parallaxInstance = new Parallax(heroImg, {
+        relativeInput: true,
+        hoverOnly: true,
     });
     // Fade out hero background image on scroll down
-    $(window).scroll(function(){
+    $(window).scroll(() => {
         $(".hero").css("opacity", 1 - $(window).scrollTop() / ($('.hero').height() / 1.5));
     });
-    
+    // Toggle is-active animation class on hamburger menu 
+    $('.hamburger').on("click", () => {
+        $('.hamburger').toggleClass("is-active");
+    });
+    // Toggle display fixed left nav menu on click hamburger
+    $('.hamburger').on('click', () => {
+        $('.fixed-left-nav').toggleClass('d-none');
+    });
+
 });
