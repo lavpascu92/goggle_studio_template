@@ -19,5 +19,6 @@ $(document).ready(function () {
     $('.hamburger').on('click', () => {
         $('.fixed-left-nav').toggleClass('d-none');
     });
+   
 
 });
