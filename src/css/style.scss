@@ -367,7 +367,7 @@ body {
 }
 
 .glance-title {
-    padding-bottom: 52px;
+    // padding-bottom: 52px;
     @include font_abril_accent(400, $font_XL);
 
 }
@@ -377,7 +377,7 @@ body {
     padding-bottom: 52px;
     line-height: 1.5rem;
     font-size: $font_XS;
-
+    margin-top: 52px;
     @include media_query($Tablet) {
         width: 100%;
     }
@@ -483,18 +483,23 @@ body {
 }
 
 .grid-2-para {
-    padding: 40px 0px;
+    margin-top: 40px;
+    // padding: 40px 0px;
     font-size: $font_XS;
     color: $color_gray_links;
     line-height: 1.35rem;
 }
 
 .grid-2-info-links {
+    margin-top: 40px;
     position: relative;
     color: rgba(240, 93, 94, 0.8);
     text-transform: uppercase;
     font-weight: 800;
     font-size: $font_XS;
+    @include media_query($Tablet){
+        height: 48px;
+    }
 }
 
 .grid-2-img {

@@ -461,7 +461,6 @@ body {
 }
 
 .glance-title {
-  padding-bottom: 52px;
   font-family: 'Abril Fatface', cursive;
   font-weight: 400;
   font-size: 2rem;
@@ -472,6 +471,7 @@ body {
   padding-bottom: 52px;
   line-height: 1.5rem;
   font-size: 0.9rem;
+  margin-top: 52px;
 }
 
 @media (max-width: 768px) {
@@ -617,18 +617,25 @@ body {
 }
 
 .grid-2-para {
-  padding: 40px 0px;
+  margin-top: 40px;
   font-size: 0.9rem;
   color: #333;
   line-height: 1.35rem;
 }
 
 .grid-2-info-links {
+  margin-top: 40px;
   position: relative;
   color: rgba(240, 93, 94, 0.8);
   text-transform: uppercase;
   font-weight: 800;
   font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .grid-2-info-links {
+    height: 48px;
+  }
 }
 
 .grid-2-img {
